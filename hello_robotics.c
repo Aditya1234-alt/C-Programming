@@ -128,7 +128,72 @@ int main() {
 }
 
 
+#include <stdio.h>
 
+int main() {
+    float speed, time, distance;
+
+    printf("Enter speed: ");
+    scanf("%f", &speed);
+
+    printf("Enter time: ");
+    scanf("%f", &time);
+
+    distance = speed * time;
+
+    printf("Hello, Robotics!\n");
+    printf("Distance = %.2f units\n", distance);
+
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+    int choice;
+
+    printf("Hello, Robotics!\n");
+    printf("1. Forward\n");
+    printf("2. Backward\n");
+    printf("3. Left\n");
+    printf("4. Right\n");
+
+    printf("Enter choice: ");
+    scanf("%d", &choice);
+
+    if (choice == 1)
+        printf("Robot moves Forward.\n");
+    else if (choice == 2)
+        printf("Robot moves Backward.\n");
+    else if (choice == 3)
+        printf("Robot turns Left.\n");
+    else if (choice == 4)
+        printf("Robot turns Right.\n");
+    else
+        printf("Invalid choice.\n");
+
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+    int sensor;
+
+    printf("Enter sensor value: ");
+    scanf("%d", &sensor);
+
+    printf("Hello, Robotics!\n");
+
+    if (sensor == 1)
+        printf("Obstacle detected!\n");
+    else
+        printf("Path is clear.\n");
+
+    return 0;
+}
 #include <stdio.h>
 
 int main() {
@@ -145,3 +210,5 @@ int main() {
 
     return 0;
 }
+
+
