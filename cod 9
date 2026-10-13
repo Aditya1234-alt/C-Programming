@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int i;
+    printf("Motor PWM:\n");
+    for(i = 0; i < 10; i++)
+    {
+        if(i < 6)
+            printf("ON ");
+        else
+            printf("OFF ");
+    }
+    return 0;
+}
