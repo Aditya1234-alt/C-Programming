@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    float a, b;
+
+    printf("Enter Sensor 1 value: ");
+    scanf("%f", &a);
+
+    printf("Enter Sensor 2 value: ");
+    scanf("%f", &b);
+
+    if (a > b)
+        printf("Sensor 1 is greater.\n");
+    else if (b > a)
+        printf("Sensor 2 is greater.\n");
+    else
+        printf("Both values are equal.\n");
+
+    return 0;
+}
