@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float battery;
+
+    printf("Enter battery percentage: ");
+    scanf("%f", &battery);
+
+    if (battery > 50)
+        printf("Battery Status: Good\n");
+    else if (battery > 20)
+        printf("Battery Status: Low\n");
+    else if (battery >= 0)
+        printf("Battery Status: Critical\n");
+    else
+        printf("Invalid Battery Percentage\n");
+
+    return 0;
+}
