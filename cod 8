@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int i;
+    printf("LED PWM:\n");
+    for(i = 0; i < 10; i++)
+    {
+        if(i < 8)
+            printf("ON ");
+        else
+            printf("OFF ");
+    }
+    return 0;
+}
