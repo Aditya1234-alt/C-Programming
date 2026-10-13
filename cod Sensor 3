@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    float temperature;
+
+    printf("Enter temperature: ");
+    scanf("%f", &temperature);
+
+    if (temperature > 40)
+        printf("Warning: High Temperature!\n");
+    else
+        printf("Temperature is Normal.\n");
+
+    return 0;
+}
