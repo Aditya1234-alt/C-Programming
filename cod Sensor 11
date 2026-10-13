@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int choice;
+
+    printf("1. Start Motor\n");
+    printf("2. Stop Motor\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    if (choice == 1)
+        printf("Motor Started!\n");
+    else if (choice == 2)
+        printf("Motor Stopped!\n");
+    else
+        printf("Invalid Choice!\n");
+
+    return 0;
+}
