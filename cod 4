@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int duty, period, i;
+    printf("Enter period: ");
+    scanf("%d", &period);
+    printf("Enter duty cycle: ");
+    scanf("%d", &duty);
+
+    for(i = 0; i < period; i++)
+    {
+        if(i < duty)
+            printf("1");
+        else
+            printf("0");
+    }
+    return 0;
+}
