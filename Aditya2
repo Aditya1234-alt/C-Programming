@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    float sensor;
+
+    printf("Enter sensor value: ");
+    scanf("%f", &sensor);
+
+    if (sensor > 50)
+        printf("Warning: High Sensor Value");
+    else
+        printf("Sensor Value Normal");
+
+    return 0;
+}
